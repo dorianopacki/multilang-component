@@ -20,7 +20,6 @@ export const LanguageProvider = ({ children }) => {
       ...language,
       name,
     }));
-    console.log(language);
   }
 
   return (

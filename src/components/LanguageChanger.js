@@ -10,7 +10,7 @@ export const LanguageChanger = () => {
       <button name="pl" onClick={toggleLanguage}>
         Polish
       </button>
-      <button name="eng" onClick={toggleLanguage}>
+      <button name="en" onClick={toggleLanguage}>
         English
       </button>
     </>
