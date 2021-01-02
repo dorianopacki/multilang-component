@@ -16,10 +16,14 @@ export const LanguageProvider = ({ children }) => {
 
   function toggleLanguage(e) {
     const { name } = e.target;
-    setLanguage((language) => ({
-      ...language,
-      name,
-    }));
+    if (language.name === name) {
+      return;
+    } else {
+      setLanguage((language) => ({
+        ...language,
+        name,
+      }));
+    }
   }
 
   return (
